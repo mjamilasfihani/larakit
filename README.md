@@ -45,7 +45,8 @@ To make sure CI/CD is working:
 - Run `composer ci` for passed all the tests
 - `composer style` or `composer cs-fix` is fixing the style code
 - `vendor\bin\rector process` is fixing the rector error
-- For mutate test, please run periodically (it's heavy test)
+- For infection test, please run periodically (it's heavy test)
+- To run infection just call `composer mutate`
 
 ## Contributing
 
