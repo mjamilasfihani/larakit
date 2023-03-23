@@ -1,16 +1,36 @@
-name: NodeJs Test
-on: push
+name: NodeJs
+
+on:
+  pull_request:
+    branches:
+      - develop
+    paths:
+      - 'package.json'
+      - '.github/workflows/nodejs.yml'
+  push:
+    branches:
+      - develop
+    paths:
+      - 'package.json'
+      - '.github/workflows/nodejs.yml'
+
 jobs:
-  run-npm-install:
+  main:
+    name: NodeJs ${{ matrix.node }} Tests
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
     strategy:
       matrix:
         node: [16, 18]
-    steps:
-      - uses: actions/checkout@v2
 
-      - uses: actions/setup-node@v2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up NodeJs
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
 
-      - run: npm install
+      - name: Install dependencies
+        run: npm install
