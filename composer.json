@@ -4,7 +4,48 @@
     "description": "Toolkit for GitHub CI/CD Laravel development.",
     "license": "None",
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "ext-pcov": "*",
+        "ext-redis": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.15",
+        "icanhazstring/composer-unused": "^0.8.7",
+        "infection/infection": "^0.26.19",
+        "phpunit/phpunit": "^9.0",
+        "qossmic/deptrac-shim": "^1.0",
+        "rector/rector": "^0.15",
+        "sebastian/phpcpd": "^6.0",
+        "vimeo/psalm": "^5.6"
+    },
+    "scripts": {
+        "analyze": [
+            "composer-unused",
+            "phpstan analyze",
+            "psalm",
+            "rector process --dry-run"
+        ],
+        "sa": "@analyze",
+        "ci": [
+            "Composer\\Config::disableProcessTimeout",
+            "@cs",
+            "@deduplicate",
+            "@inspect",
+            "@analyze",
+            "@test"
+        ],
+        "cs": "php-cs-fixer fix --ansi --verbose --dry-run --diff",
+        "cs-fix": "php-cs-fixer fix --ansi --verbose --diff --using-cache=yes",
+        "style": "@cs-fix",
+        "deduplicate": "phpcpd app/ tests/",
+        "inspect": "deptrac analyze --cache-file=build/deptrac.cache",
+        "mutate": "infection --threads=2 --skip-initial-tests --coverage=build/phpunit",
+        "test": "phpunit --coverage --coverage-xml=build/phpunit/index.xml --log-junit=build/phpunit/junit.xml"
+    },
+    "config": {
+        "allow-plugins": {
+            "infection/extension-installer": true
+        }
     },
     "minimum-stability": "stable",
     "prefer-stable": true
