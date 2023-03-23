@@ -1,4 +1,4 @@
-name: Node Test
+name: NodeJs Test
 on: push
 jobs:
   run-npm-install:

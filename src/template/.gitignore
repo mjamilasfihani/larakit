@@ -1,6 +1,3 @@
-# the non-commented value is
-# default from laravel:9.x
-
 # /build
 /node_modules
 /public/build
