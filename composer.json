@@ -1,0 +1,11 @@
+{
+    "name": "mjamilasfihani/laravel-devkit",
+    "type": "library",
+    "description": "Toolkit for GitHub CI/CD Laravel development.",
+    "license": "None",
+    "require": {
+        "php": "^8.1"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
