@@ -8,8 +8,12 @@ $finder = Finder::create();
 
 // Searches files and directories which match defined rules.
 $finder->in([
-    __DIR__.'/src',
-    __DIR__.'/tests',
+    __DIR__.'/vendor/laravel/laravel/app',
+    __DIR__.'/vendor/laravel/laravel/config',
+    __DIR__.'/vendor/laravel/laravel/database',
+    __DIR__.'/vendor/laravel/laravel/lang',
+    __DIR__.'/vendor/laravel/laravel/routes',
+    __DIR__.'/vendor/laravel/laravel/tests',
 ]);
 
 // Adds rules that files must match.

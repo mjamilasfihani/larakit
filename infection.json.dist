@@ -1,0 +1,13 @@
+{
+	"source": {
+		"directories": [
+            "vendor/laravel/laravel/app/"
+		]
+	},
+	"logs": {
+		"text": "build/infection.log"
+	},
+	"mutators": {
+		"@default": true
+	}
+}

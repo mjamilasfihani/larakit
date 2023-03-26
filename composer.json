@@ -5,10 +5,6 @@
     "license": "None",
     "require": {
         "php": "^8.1",
-        "ext-pcov": "*",
-        "ext-redis": "*"
-    },
-    "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.15",
         "icanhazstring/composer-unused": "^0.8.7",
         "infection/infection": "^0.26.19",
@@ -18,9 +14,12 @@
         "sebastian/phpcpd": "^6.0",
         "vimeo/psalm": "^5.6"
     },
+    "require-dev": {
+        "laravel/laravel": "9.x"
+    },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "vendor/laravel/laravel/tests/"
         }
     },
     "scripts": {
@@ -45,7 +44,7 @@
         "deduplicate": "phpcpd src/ tests/",
         "inspect": "deptrac analyze --cache-file=build/deptrac.cache",
         "mutate": "infection --threads=2 --skip-initial-tests --coverage=build/phpunit",
-        "test": "phpunit --coverage --coverage-xml=build/phpunit/index.xml --log-junit=build/phpunit/junit.xml"
+        "test": "phpunit --coverage-xml=build/phpunit/index.xml --log-junit=build/phpunit/junit.xml"
     },
     "config": {
         "allow-plugins": {
