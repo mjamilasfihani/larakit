@@ -20,7 +20,7 @@ Usage of `username\repository` requires the following:
 - A [Laravel v9.x](https://laravel.com/docs/9.x) based project
 - [Composer](https://getcomposer.org/) for package management
 - PHP 8.1+
-- Node JS 16.0+ | 18.0+
+- NodeJS 16.0+ | 18.0+
 - ...?
 
 ## Usage
