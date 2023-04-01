@@ -25,36 +25,38 @@ Usage of `mjamilasfihani\laravel-devkit` requires the following:
 
 There is a few task before you can begin develop:
 
-Configure the composer authentication:
+- Add variable to authenticate Composer::
 
-```json
-{
-    "http-basic": {
-        "mjamilasfihani.repo.repman.io": {
-            "token": "4506d25a61b8c018a8e525256f4b26d73b5a34afec0869420cce0dcb10788a32"
+    ```json
+    {
+        "http-basic": {
+            "mjamilasfihani.repo.repman.io": {
+                "username": "token",
+                "password": "4506d25a61b8c018a8e525256f4b26d73b5a34afec0869420cce0dcb10788a32"
+            }
         }
     }
-}
-```
+    ```
 
-Add these lines to your composer.json file:
+- Add these lines to your composer.json file:
 
-```json
-{
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://mjamilasfihani.repo.repman.io"
-        }
-    ]
-}
-```
+    ```json
+    {
+        "repositories": [
+            {
+                "type": "composer",
+                "url": "https://mjamilasfihani.repo.repman.io"
+            }
+        ]
+    }
+    ```
 
 After the first step is done:
 
-- First step
-- Second
-- ...?
+- Run `composer require mjamilasfihani\laravel-devkit --dev`
+- Lookup the template folder in the vendor's dir
+- Feel free to syncronize everything
+- The repository will not update periodically
 
 To make sure CI/CD is working:
 
