@@ -9,7 +9,7 @@
 
 ## About
 
-Laravel Devkit is a website project about to help the Laravel 9 web based CI/CD always been tracked.
+Laravel Devkit is a website project toolkit for GitHub CI/CD Laravel development, so it can be always tracked.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ Usage of `mjamilasfihani\laravel-devkit` requires the following:
 - [Composer](https://getcomposer.org) for package management
 - PHP 8.1+
 - NodeJS 16.0+ | 18.0+
-- PCOV & REDIS extensions
+- [pcov](https://pecl.php.net/package/pcov) & [redis](https://pecl.php.net/package/redis) php extension
 
 ## Usage
 
