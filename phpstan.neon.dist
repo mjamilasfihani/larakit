@@ -3,6 +3,5 @@ parameters:
 	level: 5
 	treatPhpDocTypesAsCertain: false
 	paths:
-		- vendor/laravel/laravel/app/
-		- vendor/laravel/laravel/routes/
-		- vendor/laravel/laravel/tests/
+		- app/
+		- tests/

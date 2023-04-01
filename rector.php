@@ -49,17 +49,17 @@ return static function (RectorConfig $rectorConfig): void {
 
     // The paths to refactor (can also be supplied with CLI arguments)
     $rectorConfig->paths([
-        __DIR__.'/vendor/laravel/laravel/app/',
-        __DIR__.'/vendor/laravel/laravel/routes/',
+        __DIR__ . '/app/',
+        __DIR__ . '/tests/',
     ]);
 
     // Include Composer's autoload - required for global execution, remove if running locally
     $rectorConfig->autoloadPaths([
-        __DIR__.'/vendor/autoload.php',
+        __DIR__ . '/vendor/autoload.php',
     ]);
 
-    if (is_file(__DIR__.'/phpstan.neon.dist')) {
-        $rectorConfig->phpstanConfig(__DIR__.'/phpstan.neon.dist');
+    if (is_file(__DIR__ . '/phpstan.neon.dist')) {
+        $rectorConfig->phpstanConfig(__DIR__ . '/phpstan.neon.dist');
     }
 
     // Set the target version for refactoring
@@ -71,7 +71,7 @@ return static function (RectorConfig $rectorConfig): void {
     // Are there files or rules you need to skip?
     $rectorConfig->skip([
         // helpers.php
-        // __DIR__.'/app/helpers.php',
+        // __DIR__ . '/app/helpers.php',
 
         JsonThrowOnErrorRector::class,
         StringifyStrNeedlesRector::class,
@@ -81,8 +81,13 @@ return static function (RectorConfig $rectorConfig): void {
 
         // Ignore tests that might make calls without a result
         RemoveEmptyMethodCallRector::class => [
-            __DIR__.'/tests',
+            __DIR__ . '/tests',
         ],
+
+        // Ignore files that should not be namespaced to their folder
+        // NormalizeNamespaceByPSR4ComposerAutoloadRector::class => [
+        //     __DIR__ . '/app/Helpers',
+        // ],
 
         // May load view files directly when detecting classes
         StringClassNameToClassConstantRector::class,
@@ -118,7 +123,7 @@ return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->rule(NormalizeNamespaceByPSR4ComposerAutoloadRector::class);
     $rectorConfig
         ->ruleWithConfiguration(TypedPropertyFromAssignsRector::class, [
-            /*
+            /**
              * The INLINE_PUBLIC value is default to false to avoid BC break, if you use for libraries and want to preserve BC break, you don't need to configure it, as it included in LevelSetList::UP_TO_PHP_74
              * Set to true for projects that allow BC break
              */

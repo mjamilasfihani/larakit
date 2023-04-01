@@ -1,4 +1,4 @@
-name: PHPStan
+name: PHPUnit
 
 on:
   pull_request:
@@ -7,24 +7,23 @@ on:
     paths:
       - '**.php'
       - 'composer.*'
-      - 'phpstan*'
-      - '.github/workflows/phpstan.yml'
+      - 'phpunit*'
+      - '.github/workflows/phpunit.yml'
   push:
     branches:
       - develop
     paths:
       - '**.php'
       - 'composer.*'
-      - 'phpstan*'
-      - '.github/workflows/phpstan.yml'
+      - 'phpunit*'
+      - '.github/workflows/phpunit.yml'
 
 jobs:
-  build:
-    name: PHP ${{ matrix.php-versions }} Static Analysis
+  main:
+    name: PHP ${{ matrix.php-versions }} Unit Tests
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     strategy:
-      fail-fast: false
       matrix:
         php-versions: ['8.1']
 
@@ -32,13 +31,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup PHP
+      - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-versions }}
-          tools: phpstan, phpunit
-          extensions: intl, json, mbstring, xml
-          coverage: none
+          tools: composer, phive, phpunit
+          extensions: intl, json, mbstring, gd, xdebug, xml, sqlite3
+          coverage: xdebug
         env:
           COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -52,15 +51,8 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}-${{ hashFiles('**/composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-
 
-      - name: Create PHPStan cache directory
-        run: mkdir -p build/phpstan
-
-      - name: Cache PHPStan results
-        uses: actions/cache@v3
-        with:
-          path: build/phpstan
-          key: ${{ runner.os }}-phpstan-${{ github.sha }}
-          restore-keys: ${{ runner.os }}-phpstan-
+      - name: Copy .env
+        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
 
       - name: Install dependencies
         run: |
@@ -69,5 +61,34 @@ jobs:
           else
             composer update --no-progress --no-interaction --prefer-dist --optimize-autoloader
           fi
-      - name: Run static analysis
-        run: vendor/bin/phpstan analyze
+
+      - name: Generate key
+        run: php artisan key:generate
+
+      - name: Directory Permissions
+        run: chmod -R 777 storage bootstrap/cache
+
+      - name: Create Database
+        run: |
+          mkdir -p database
+          touch database/database.sqlite
+
+      - name: Test with PHPUnit
+        run: vendor/bin/phpunit --verbose --coverage-text
+        env:
+          TERM: xterm-256color
+          TACHYCARDIA_MONITOR_GA: enabled
+          DB_CONNECTION: sqlite
+          DB_DATABASE: database/database.sqlite
+
+  coveralls:
+    needs: [main]
+    name: Coveralls Finished
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload Coveralls results
+        uses: coverallsapp/github-action@master
+        continue-on-error: true
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel-finished: true

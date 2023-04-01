@@ -1,4 +1,4 @@
-name: NodeJs
+name: NodeJS
 
 on:
   pull_request:
@@ -16,7 +16,7 @@ on:
 
 jobs:
   main:
-    name: NodeJs ${{ matrix.node }} Tests
+    name: NodeJS ${{ matrix.node }} Tests
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     strategy:

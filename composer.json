@@ -1,7 +1,8 @@
 {
     "name": "mjamilasfihani/laravel-devkit",
-    "type": "library",
+    "type": "project",
     "description": "Toolkit for GitHub CI/CD Laravel development.",
+    "keywords": ["laravel", "devkit", "ci/cd"],
     "license": "None",
     "require": {
         "php": "^8.1",
@@ -14,12 +15,9 @@
         "sebastian/phpcpd": "^6.0",
         "vimeo/psalm": "^5.6"
     },
-    "require-dev": {
-        "laravel/laravel": "9.x"
-    },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "vendor/laravel/laravel/tests/"
+            "Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -47,6 +45,9 @@
         "test": "phpunit --coverage-xml=build/phpunit/index.xml --log-junit=build/phpunit/junit.xml"
     },
     "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
         "allow-plugins": {
             "infection/extension-installer": true
         }

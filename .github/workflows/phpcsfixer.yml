@@ -28,7 +28,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.1'
-          extensions: redis, json, tokenizer
+          extensions: json, tokenizer
           coverage: none
         env:
           COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -46,9 +46,9 @@ jobs:
       - name: Install dependencies
         run: |
           if [ -f composer.lock ]; then
-            composer install --no-progress --no-interaction --prefer-dist --optimize-autoloader --ignore-platform-req=ext-pcov
+            composer install --no-progress --no-interaction --prefer-dist --optimize-autoloader
           else
-            composer update --no-progress --no-interaction --prefer-dist --optimize-autoloader --ignore-platform-req=ext-pcov
+            composer update --no-progress --no-interaction --prefer-dist --optimize-autoloader
           fi
       - name: Check code for standards compliance
         run: vendor/bin/php-cs-fixer fix --verbose --ansi --dry-run --using-cache=no --diff

@@ -4,5 +4,4 @@ parameters:
 	treatPhpDocTypesAsCertain: false
 	paths:
 		- app/
-		- routes/
 		- tests/
