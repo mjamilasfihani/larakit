@@ -15,6 +15,13 @@
         "sebastian/phpcpd": "^6.0",
         "vimeo/psalm": "^5.6"
     },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
@@ -39,7 +46,7 @@
         "cs": "php-cs-fixer fix --ansi --verbose --dry-run --diff",
         "cs-fix": "php-cs-fixer fix --ansi --verbose --diff --using-cache=yes",
         "style": "@cs-fix",
-        "deduplicate": "phpcpd src/ tests/",
+        "deduplicate": "phpcpd app/ tests/",
         "inspect": "deptrac analyze --cache-file=build/deptrac.cache",
         "mutate": "infection --threads=2 --skip-initial-tests --coverage=build/phpunit",
         "test": "phpunit --coverage-xml=build/phpunit/index.xml --log-junit=build/phpunit/junit.xml"
