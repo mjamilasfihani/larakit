@@ -1,0 +1,50 @@
+parameters:
+  paths:
+    - ./app/
+  exclude_files:
+    - '#.*test.*#i'
+  layers:
+    - name: Console
+      collectors:
+        - type: bool
+          must:
+          - type: directory
+            regex: app/Console/.*
+    - name: Exceptions
+      collectors:
+        - type: bool
+          must:
+          - type: directory
+            regex: app/Exceptions/.*
+    - name: Controllers
+      collectors:
+        - type: bool
+          must:
+          - type: directory
+            regex: app/Http/Controllers/.*
+    - name: Middleware
+      collectors:
+        - type: bool
+          must:
+          - type: directory
+            regex: app/Http/Middleware/.*
+    - name: Models
+      collectors:
+        - type: bool
+          must:
+          - type: directory
+            regex: app/Models/.*
+    - name: Providers
+      collectors:
+        - type: bool
+          must:
+          - type: directory
+            regex: app/Providers/.*
+  ruleset:
+    Console:
+    Exceptions:
+    Controllers:
+    Middleware:
+    Models:
+    Providers:
+  skip_violations:
