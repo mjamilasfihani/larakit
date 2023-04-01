@@ -3,36 +3,7 @@
 use PhpCsFixer\Config;
 use PhpCsFixer\Finder;
 
-// Creates a new Finder.
-$finder = Finder::create();
-
-// Searches files and directories which match defined rules.
-$finder->in([
-    __DIR__.'/app',
-    __DIR__.'/config',
-    __DIR__.'/database',
-    __DIR__.'/lang',
-    __DIR__.'/routes',
-    __DIR__.'/tests',
-]);
-
-// Adds rules that files must match.
-$finder->name('*.php');
-
-// Excludes "hidden" directories and files (starting with a dot).
-$finder->ignoreDotFiles(true);
-
-// Forces the finder to ignore version control directories.
-$finder->ignoreVCS(true);
-
-// Set config.
-$config = new Config();
-
-// Set finder.
-$config->setFinder($finder);
-
-// Set rules.
-$config->setRules([
+$rules = [
     /** PHP arrays should be declared using the configured syntax. */
     'array_syntax' => [
         'syntax' => 'short',
@@ -263,13 +234,23 @@ $config->setRules([
         ],
     ],
     'whitespace_after_comma_in_array' => true,
-]);
+];
 
-// Set if it is allowed to run risky fixers.
-$config->setRiskyAllowed(true);
+$finder = Finder::create()
+    ->in([
+        __DIR__.'/app',
+        __DIR__.'/config',
+        __DIR__.'/database',
+        __DIR__.'/lang',
+        __DIR__.'/routes',
+        __DIR__.'/tests',
+    ])
+    ->name('*.php')
+    ->ignoreDotFiles(true)
+    ->ignoreVCS(true);
 
-// Set if it is using cache.
-$config->setUsingCache(true);
-
-// Return config.
-return $config;
+return (new Config())
+    ->setFinder($finder)
+    ->setRules($rules)
+    ->setRiskyAllowed(true)
+    ->setUsingCache(true);
