@@ -25,7 +25,7 @@ Usage of `mjamilasfihani\laravel-devkit` requires the following:
 
 There is a few task before you can begin develop:
 
-- Add variable to authenticate Composer:
+- Add variable to authenticate Composer before scripts:
 
     ```json
     {
@@ -38,7 +38,7 @@ There is a few task before you can begin develop:
     }
     ```
 
-- Add these lines to your composer.json file:
+- Add these lines to your composer.json file after config:
 
     ```json
     {
