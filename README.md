@@ -25,26 +25,30 @@ Usage of `mjamilasfihani\laravel-devkit` requires the following:
 
 There is a few task before you can begin develop:
 
-- Configure global authentication:
+Configure the composer authentication:
 
-    ```bash
-    composer config --global --auth http-basic.mjamilasfihani.repo.repman.io token 4506d25a61b8c018a8e525256f4b26d73b5a34afec0869420cce0dcb10788a32
-    ```
-
-- Add these lines to your composer.json file:
-
-    ```json
-    {
-        "repositories": [
-            {
-                "type": "composer",
-                "url": "https://mjamilasfihani.repo.repman.io"
-            }
-        ]
+```json
+{
+    "http-basic": {
+        "mjamilasfihani.repo.repman.io": {
+            "token": "4506d25a61b8c018a8e525256f4b26d73b5a34afec0869420cce0dcb10788a32"
+        }
     }
-    ```
+}
+```
 
-- ...?
+Add these lines to your composer.json file:
+
+```json
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://mjamilasfihani.repo.repman.io"
+        }
+    ]
+}
+```
 
 After the first step is done:
 
