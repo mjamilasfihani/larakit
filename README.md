@@ -15,7 +15,7 @@ Laravel Devkit is a website project toolkit for GitHub CI/CD Laravel development
 
 Usage of `mjamilasfihani\laravel-devkit` requires the following:
 
-- A [Laravel v9.x](https://laravel.com/docs/9.x) based project
+- A [Laravel](https://laravel.com) based project (8.0+ | 9.0+)
 - [Composer](https://getcomposer.org) for package management
 - PHP 8.1+
 - NodeJS 16.0+ | 18.0+
