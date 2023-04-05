@@ -1,3 +1,14 @@
 {
-    "name": "mjamilasfihani/larakit"
+    "name": "mjamilasfihani/larakit",
+    "require": {
+        "php": "^7.3 || ^7.4 || ^8.0 || ^8.1",
+        "friendsofphp/php-cs-fixer": "*",
+        "icanhazstring/composer-unused": "*",
+        "infection/infection": "*",
+        "phpunit/phpunit": "*",
+        "qossmic/deptrac-shim": "*",
+        "rector/rector": "*",
+        "sebastian/phpcpd": "*",
+        "vimeo/psalm": "*"
+    }
 }
