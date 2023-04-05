@@ -1,5 +1,5 @@
 {
-    "name": "mjamilasfihani/development-kit",
+    "name": "mjamilasfihani/larakit",
     "type": "project",
     "description": "Toolkit for GitHub CI/CD Laravel development.",
     "keywords": ["laravel", "devkit", "ci/cd"],
