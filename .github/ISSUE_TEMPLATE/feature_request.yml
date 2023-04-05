@@ -12,6 +12,15 @@ body:
       value: |
         Thanks for taking the time to fill out this feature request!
 
+  - type: checkboxes
+    id: new-feature
+    attributes:
+      label: Is there an existing feature request for this?
+      description: Please search to see if an feature request already exists for the feature you encountered.
+      options:
+      - label: I have searched the existing feature request
+        required: true
+
   - type: textarea
     id: description
     attributes:
