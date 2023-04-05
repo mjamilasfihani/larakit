@@ -1,7 +1,0 @@
-parameters:
-	tmpDir: build/phpstan
-	level: 5
-	treatPhpDocTypesAsCertain: false
-	paths:
-		- app/
-		- tests/
