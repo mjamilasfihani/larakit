@@ -4,7 +4,7 @@
 <a href="https://github.com/username/repository/actions/workflows/phpunit.yml"><img src="https://github.com/username/repository/workflows/PHPUnit/badge.svg" alt="PHPUnit Result"></a>
 <a href="https://github.com/username/repository/actions/workflows/phpstan.yml"><img src="https://github.com/username/repository/workflows/PHPStan/badge.svg" alt="PHPStan Result"></a>
 <a href="https://github.com/username/repository/actions/workflows/deptrac.yml"><img src="https://github.com/username/repository/workflows/Deptrac/badge.svg" alt="Deptrac Result"></a>
-<a href="https://coveralls.io/github/username/repository?branch=develop"><img src="https://coveralls.io/repos/github/username/repository/badge.svg?branch=develop" alt="Coverage Result"></a>
+<a href="https://github.com/username/repository/actions/workflows/nodejs.yml"><img src="https://github.com/username/repository/workflows/NodeJS/badge.svg" alt="NodeJS Result"></a>
 </p>
 
 ## About
@@ -15,11 +15,10 @@
 
 Usage of `username\repository` requires the following:
 
-- A [Laravel v9.x](https://laravel.com/docs/9.x) based project
+- A [Laravel v8.x](https://laravel.com/docs/8.x) based project
 - [Composer](https://getcomposer.org) for package management
-- PHP 8.1+
-- NodeJS 16.0+ | 18.0+
-- ...?
+- PHP 7.3.0+ | 7.4.0+ | 8.0.0+ | 8.1.0+
+- NodeJS 14+ | 16.0+ | 18.0+
 
 ## Usage
 
@@ -54,4 +53,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[None](https://github.com/username/repository)
+[Unlicense](https://github.com/username/repository)

@@ -65,6 +65,7 @@ jobs:
           else
             composer update --no-progress --no-interaction --prefer-dist --optimize-autoloader
           fi
+
       - name: Trace dependencies
         run: |
           sudo phive --no-progress install --global --trust-gpg-keys B8F640134AB1782E,A98E898BB53EB748 qossmic/deptrac
