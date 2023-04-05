@@ -2,4 +2,4 @@ blank_issues_enabled: false
 contact_links:
   - name: Example Domain
     url: https://example.com
-    about: This domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission.
+    about: This domain is for use in illustrative examples in documents.<br>You may use this domain in literature without prior coordination or asking for permission.
