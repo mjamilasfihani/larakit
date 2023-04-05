@@ -1,7 +1,3 @@
-#-------------------------
-# 
-#-------------------------
-
 # /build
 /node_modules
 /public/build
@@ -14,7 +10,6 @@
 .env.production
 # .env.testing
 .phpunit.result.cache
-# .deptrac.cache
 Homestead.json
 Homestead.yaml
 auth.json

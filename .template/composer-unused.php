@@ -12,10 +12,8 @@ return static fn (Configuration $config): Configuration => $config
     // ->addPatternFilter(PatternFilter::fromString('/symfony-.*/'))
     ->setAdditionalFilesFor('username/repository', [
         ...Glob::glob(__DIR__.'/app/**.php'),
-        ...Glob::glob(__DIR__.'/bootstrap/**.php'),
         ...Glob::glob(__DIR__.'/config/**.php'),
         ...Glob::glob(__DIR__.'/database/**.php'),
-        ...Glob::glob(__DIR__.'/public/**.php'),
         ...Glob::glob(__DIR__.'/routes/**.php'),
         ...Glob::glob(__DIR__.'/tests/**.php'),
     ]);

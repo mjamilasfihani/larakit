@@ -21,6 +21,6 @@
         "deduplicate": "phpcpd app/ tests/",
         "inspect": "deptrac analyze --cache-file=build/deptrac.cache",
         "mutate": "infection --threads=2 --skip-initial-tests --coverage=build/phpunit",
-        "test": "phpunit --coverage --coverage-xml=build/phpunit/index.xml --log-junit=build/phpunit/junit.xml"
+        "test": "phpunit --coverage-xml=build/phpunit/coverage --log-junit=build/phpunit/junit.xml"
     }
 }
