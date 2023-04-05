@@ -1,3 +1,24 @@
 {
-    "name": "mjamilasfihani/larakit"
+    "name": "mjamilasfihani/larakit",
+    "require": {
+        "php": "^8.0.2 || ^8.1.0",
+        "friendsofphp/php-cs-fixer": "*",
+        "icanhazstring/composer-unused": "*",
+        "infection/infection": "*",
+        "phpunit/phpunit": "*",
+        "qossmic/deptrac-shim": "*",
+        "rector/rector": "*",
+        "sebastian/phpcpd": "*",
+        "vimeo/psalm": "*"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "infection/extension-installer": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
