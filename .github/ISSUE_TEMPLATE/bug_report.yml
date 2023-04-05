@@ -1,5 +1,5 @@
-name: Bug Report
-description: File a bug report here
+name: Bug report
+description: Create a report to help us improve
 
 title: "[bug]: "
 labels: ["bug"]
@@ -8,44 +8,4 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!!!
-
-  - type: dropdown
-    id: php-version
-    attributes:
-      label: PHP Version
-      description: Which PHP versions did you run your code?
-      multiple: true
-      options:
-        - '7.3'
-        - '7.4'
-        - '8.0'
-        - '8.1'
-    validations:
-      required: true
-
-  - type: dropdown
-    id: node-version
-    attributes:
-      label: NodeJs Version
-      description: Which NodeJS versions did you run your code?
-      multiple: true
-      options:
-        - '14.x'
-        - '16.x'
-        - '18.x'
-    validations:
-      required: true
-
-  - type: dropdown
-    id: operating-systems
-    attributes:
-      label: Which operating systems have you tested for this bug?
-      description: You may select more than one.
-      multiple: true
-      options:
-        - macOS
-        - Windows
-        - Linux
-    validations:
-      required: true
+        Thanks for taking the time to fill out this bug report!

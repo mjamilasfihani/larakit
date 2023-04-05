@@ -1,0 +1,11 @@
+name: Feature request
+description: Suggest an idea for this project
+
+title: "[feature]: "
+labels: ["enhancement"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
