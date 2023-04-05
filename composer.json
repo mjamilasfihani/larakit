@@ -16,6 +16,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
+            "icanhazstring/composer-unused": true,
             "infection/extension-installer": true
         }
     },
