@@ -1,9 +1,8 @@
-name: Bug report
-description: Create a report to help us improve
+name: Bug Report
+description: File a bug report
 
-title: "[bug]: "
+title: "[Bug]: "
 labels: ["bug"]
-
 # assignees: [""]
 
 body:
