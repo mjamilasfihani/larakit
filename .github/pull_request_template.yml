@@ -1,0 +1,19 @@
+name: Pull request
+description: Each pull request should address a single issue and have a meaningful title.
+
+title: "[v1.x]: pr-"
+labels: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this pull request!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: Explain what you have changed, and why.
+    validations:
+      required: true
