@@ -9,4 +9,4 @@ Development kits for GitHub CI/CD Laravel development.
 
 <br>
 
-###### Made with :heart: by <a href="https://www.instagram.com/mjamilasfihani">Mohammad</a> | Warning! This package isn't ready yet.
+###### Crafted with :heart: by <a href="https://www.instagram.com/mjamilasfihani">Mohammad</a> | This package isn't ready yet!
