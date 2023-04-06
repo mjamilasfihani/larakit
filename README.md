@@ -2,15 +2,6 @@
 
 Development kits for GitHub CI/CD Laravel development.
 
-| Laravel | Preview                                                                   | Command                                                 |
-| :-----: | :-----------------------------------------------------------------------: | :-----------------------------------------------------: |
-| v8.x    | <a href="https://github.com/mjamilasfihani/larasand-8.x">LaraSand 8.x</a> | `composer require mjamilasfihani/larakit:8.x-1.* --dev` |
-| v9.x    | <a href="https://github.com/mjamilasfihani/larasand-9.x">LaraSand 9.x</a> | `composer require mjamilasfihani/larakit:9.x-1.* --dev` |
-
-## Result
-
-What will you get? Here is the lists of the tests result.
-
 | Test Results | v8.x                                                                                                              | v9.x                                                                                                              |
 | ------------ | :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
 | Deptrac      | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Deptrac/badge.svg" alt="Deptrac Result">       | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Deptrac/badge.svg" alt="Deptrac Result">       |
@@ -23,6 +14,13 @@ What will you get? Here is the lists of the tests result.
 
 <!-- | Deploy       | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Deploy/badge.svg" alt="Deploy Result">         | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Deploy/badge.svg" alt="Deploy Result">         | -->
 <!-- | Psalm        | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | -->
+
+Knowing more by visiting these sanbox repository instead.
+
+| Laravel | Preview                                                                   | Command                                                 |
+| :-----: | :-----------------------------------------------------------------------: | :-----------------------------------------------------: |
+| v8.x    | <a href="https://github.com/mjamilasfihani/larasand-8.x">LaraSand 8.x</a> | `composer require mjamilasfihani/larakit:8.x-1.* --dev` |
+| v9.x    | <a href="https://github.com/mjamilasfihani/larasand-9.x">LaraSand 9.x</a> | `composer require mjamilasfihani/larakit:9.x-1.* --dev` |
 
 <sub>
 Made with :heart: by <a href="https://www.instagram.com/mjamilasfihani">Mohammad</a> | <b>Warning!</b> This package <i>isn't ready</i> yet.
