@@ -21,7 +21,7 @@ What will you get? Here is the lists of the tests result.
 | PHPUnit      | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/PHPUnit/badge.svg" alt="PHPUnit Result">       | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/PHPUnit/badge.svg" alt="PHPUnit Result">       |
 | Rector       | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Rector/badge.svg" alt="Rector Result">         | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Rector/badge.svg" alt="Rector Result">         |
 
-<!-- | Deploy      | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Deploy/badge.svg" alt="Deploy Result">          | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Deploy/badge.svg" alt="Deploy Result">         | -->
+<!-- | Deploy       | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Deploy/badge.svg" alt="Deploy Result">         | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Deploy/badge.svg" alt="Deploy Result">         | -->
 <!-- | Psalm        | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | -->
 
 <br>
