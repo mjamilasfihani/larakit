@@ -24,8 +24,6 @@ What will you get? Here is the lists of the tests result.
 <!-- | Deploy       | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Deploy/badge.svg" alt="Deploy Result">         | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Deploy/badge.svg" alt="Deploy Result">         | -->
 <!-- | Psalm        | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | -->
 
-<br>
-
 <sub>
 Made with :heart: by <a href="https://www.instagram.com/mjamilasfihani">Mohammad</a> | <b>Warning!</b> This package <i>isn't ready</i> yet.
 </sub>
