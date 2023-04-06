@@ -1,4 +1,4 @@
-<center>
+<div align="center">
 
 | Test Results | v8.x                                                                                                              | v9.x                                                                                                              |
 | ------------ | :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
@@ -13,9 +13,7 @@
 <!-- | Deploy       | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Deploy/badge.svg" alt="Deploy Result">         | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Deploy/badge.svg" alt="Deploy Result">         | -->
 <!-- | Psalm        | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | -->
 
-</center>
-
-<br>
+</div>
 
 ## Larakit
 
