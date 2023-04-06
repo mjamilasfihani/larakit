@@ -10,5 +10,5 @@ Development kits for GitHub CI/CD Laravel development.
 <br>
 
 <sub>
-Crafted with :heart: by <a href="https://www.instagram.com/mjamilasfihani">Mohammad</a> | <b>Warning!</b> This package <u>isn't ready</u> yet.
+Crafted with :heart: by <a href="https://www.instagram.com/mjamilasfihani">Mohammad</a> | <b>Warning!</b> This package <i>isn't ready</i> yet.
 </sub>
