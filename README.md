@@ -1,1 +1,1 @@
-###### &copy; 2023 All rights reserved. | Made with :heart: by <a href="https://www.instagram.com/mjamilasfihani">Mohammad</a>
+###### &copy; 2023 All rights reserved. | Crafted with :heart: by <a href="https://www.instagram.com/mjamilasfihani">Mohammad</a>
