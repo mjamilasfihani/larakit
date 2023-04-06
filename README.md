@@ -10,6 +10,6 @@ Development kits for GitHub CI/CD Laravel development.
 <br>
 <hr>
 
-<h6>
+<p style="font-size: 10px">
 Crafted with :heart: by <a href="https://www.instagram.com/mjamilasfihani">Mohammad</a> | <span style="color: red">Warning!</span> This package isn't ready yet.
-</h6>
+</p>
