@@ -15,7 +15,7 @@ Development kits for GitHub CI/CD Laravel development.
 <!-- | Deploy       | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Deploy/badge.svg" alt="Deploy Result">         | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Deploy/badge.svg" alt="Deploy Result">         | -->
 <!-- | Psalm        | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | -->
 
-Knowing more by visiting these sanbox repository instead.
+Knowing more by visiting these sanbox repository instead, you could add this package into your composer too.
 
 | Laravel | Preview                                                                   | Command                                                 |
 | :-----: | :-----------------------------------------------------------------------: | :-----------------------------------------------------: |
