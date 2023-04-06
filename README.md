@@ -1,7 +1,7 @@
 <div align="center">
 
 | v8.x                                                                                                              | v9.x                                                                                                              |
-| :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
+| :---------------------------------------------------------------------------------------------------------------  | :---------------------------------------------------------------------------------------------------------------  |
 | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Deptrac/badge.svg" alt="Deptrac Result">       | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Deptrac/badge.svg" alt="Deptrac Result">       |
 | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/NodeJS/badge.svg" alt="NodeJS Result">         | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/NodeJS/badge.svg" alt="NodeJS Result">         |
 | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/PHPCPD/badge.svg" alt="PHPCPD Result">         | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/PHPCPD/badge.svg" alt="PHPCPD Result">         |
