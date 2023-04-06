@@ -13,13 +13,14 @@ What will you get? Here is the lists of the tests result.
 
 | Test Results | v8.x                                                                                                              | v9.x                                                                                                              |
 | ------------ | :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
+<!-- | Deploy      | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Deploy/badge.svg" alt="Deploy Result">          | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Deploy/badge.svg" alt="Deploy Result">         | -->
 | Deptrac      | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Deptrac/badge.svg" alt="Deptrac Result">       | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Deptrac/badge.svg" alt="Deptrac Result">       |
 | NodeJS       | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/NodeJS/badge.svg" alt="NodeJS Result">         | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/NodeJS/badge.svg" alt="NodeJS Result">         |
 | PHPCPD       | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/PHPCPD/badge.svg" alt="PHPCPD Result">         | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/PHPCPD/badge.svg" alt="PHPCPD Result">         |
 | PHPCSFixer   | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/PHPCSFixer/badge.svg" alt="PHPCSFixer Result"> | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/PHPCSFixer/badge.svg" alt="PHPCSFixer Result"> |
 | PHPStan      | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/PHPStan/badge.svg" alt="PHPStan Result">       | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/PHPStan/badge.svg" alt="PHPStan Result">       |
 | PHPUnit      | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/PHPUnit/badge.svg" alt="PHPUnit Result">       | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/PHPUnit/badge.svg" alt="PHPUnit Result">       |
-| Psalm        | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Psalm/badge.svg" alt="Psalm Result">           |
+<!-- | Psalm        | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Psalm/badge.svg" alt="Psalm Result">           | -->
 | Rector       | <img src="https://github.com/mjamilasfihani/larasand-8.x/workflows/Rector/badge.svg" alt="Rector Result">         | <img src="https://github.com/mjamilasfihani/larasand-9.x/workflows/Rector/badge.svg" alt="Rector Result">         |
 
 <br>
