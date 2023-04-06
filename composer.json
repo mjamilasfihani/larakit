@@ -5,6 +5,7 @@
         "friendsofphp/php-cs-fixer": "*",
         "icanhazstring/composer-unused": "*",
         "infection/infection": "*",
+        "laravel-lang/common": "1.* || 2.*",
         "phpunit/phpunit": "*",
         "qossmic/deptrac-shim": "*",
         "rector/rector": "*",
