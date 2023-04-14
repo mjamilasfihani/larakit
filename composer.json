@@ -1,7 +1,7 @@
 {
     "name": "mjamilasfihani/larakit",
     "require": {
-        "php": "^7.3.0 || ^7.4.0 || ^8.0.0 || ^8.1.0",
+        "php": "^7.4.0 || ^8.0.0 || ^8.1.0",
         "friendsofphp/php-cs-fixer": "*",
         "icanhazstring/composer-unused": "*",
         "infection/infection": "*",

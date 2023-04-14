@@ -17,7 +17,7 @@ Usage of `username\repository` requires the following:
 
 - A [Laravel v8.x](https://laravel.com/docs/8.x) based project
 - [Composer](https://getcomposer.org) for package management
-- PHP 7.3.0+ | 7.4.0+ | 8.0.0+ | 8.1.0+
+- PHP 7.4.0+ | 8.0.0+ | 8.1.0+
 - NodeJS 14+ | 16.0+ | 18.0+
 
 ## Usage
